@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tian.provider.mapper.CheckGroupMapper">
+    <resultMap id="findByIdResultMap" type="com.tian.common.pojo.CheckGroup">
+        <result column="help_code" property="helpCode"/>
+        <collection property="checkItems" javaType="ArrayList"
+                    ofType="com.tian.common.pojo.CheckItem" column="id"
+                    select="com.tian.provider.mapper.CheckItemMapper.findCheckItemById"></collection>
+    </resultMap>
+    <!--根据套餐id查询检查项信息-->
+    <select id="findCheckGroupById" resultMap="findByIdResultMap">
+      select * from t_check_group
+        where id
+        in (select checkgroup_id from t_setmeal_checkgroup where setmeal_id=#{id})
+    </select>
+</mapper>

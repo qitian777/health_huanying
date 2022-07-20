@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/health_backend/health_backend.iml" filepath="$PROJECT_DIR$/health_backend/health_backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health_common/health_common.iml" filepath="$PROJECT_DIR$/health_common/health_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health_eureka/health_eureka.iml" filepath="$PROJECT_DIR$/health_eureka/health_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health_huanying.iml" filepath="$PROJECT_DIR$/health_huanying.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health_jobs/health_jobs.iml" filepath="$PROJECT_DIR$/health_jobs/health_jobs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health_mobile/health_mobile.iml" filepath="$PROJECT_DIR$/health_mobile/health_mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health_provider/health_provider.iml" filepath="$PROJECT_DIR$/health_provider/health_provider.iml" />
+    </modules>
+  </component>
+</project>
